@@ -1,0 +1,43 @@
+body{
+    background: #fafafa;
+}
+.dino{
+    width: 60px;
+    height: 60px;
+    background-image: url(imagens/dino.png);
+    position: absolute;
+    bottom: 0;
+}
+
+.cactus {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background-image: url(imagens/cactus.png);
+}
+
+.game-over{
+    text-align: center;
+    color: red;
+    margin-top: 50;
+}
+
+.background {
+    position: absolute;
+    bottom: 0px;
+    background-image: url('imagens/background.png');
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+    -webkit-animation: slideright 600s infinite linear;
+    width: 100%;
+    height: 200px;
+  }
+
+@keyframes deslisar {
+    from {
+        background-position: 70000%
+    }   to {
+        background-position: 0%;
+    }
+}
